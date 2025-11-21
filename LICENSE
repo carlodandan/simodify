@@ -1,0 +1,74 @@
+# License Overview
+
+This repository contains two types of content with different licenses:
+
+1. **Website Code (HTML, CSS, JS, React components, Tailwind classes, etc.)**  
+   Licensed under the **MIT License** — free for anyone to use, modify, and adapt.
+
+2. **Artwork & Visual Assets (illustrations, drawings, paintings, portfolio images, thumbnails, character art, designs, etc.)**  
+   Licensed under **Creative Commons Attribution–NonCommercial–NoDerivatives 4.0 International (CC BY-NC-ND 4.0)**.  
+   These works may NOT be reused, modified, redistributed, or used in any commercial manner.
+
+---
+
+# MIT License (For Website Code Only)
+
+Copyright (c) 2025 Carlo Dee
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the “Software”), to
+deal in the Software without restriction, including without limitation the
+rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+IN THE SOFTWARE.
+
+---
+
+# Creative Commons CC BY-NC-ND 4.0  
+(For Artwork, Illustrations, and Artist-Produced Images Only)
+
+The artwork, illustrations, character designs, drawings, paintings, thumbnails,
+and all visual creative assets in this repository are licensed under the:
+
+**Creative Commons Attribution–NonCommercial–NoDerivatives 4.0 International License.**
+
+You are free to:
+
+- **Share** — copy and redistribute the material in any medium or format
+
+Under the following terms:
+
+- **Attribution** — You must give appropriate credit and link back to this repository.
+- **NonCommercial** — You may not use the artwork or images for commercial purposes.
+- **NoDerivatives** — You may not modify, remix, transform, or build upon the artwork.
+
+No additional permissions are granted beyond this license.
+
+To view the full license, visit:  
+https://creativecommons.org/licenses/by-nc-nd/4.0/
+
+---
+
+# Summary (Human-readable)
+
+- ✔ The **code** is free to use (MIT).  
+- ✘ The **artwork** is **NOT** free to reuse, modify, or republish.  
+- ✔ You may look at it, learn from it, and share links — but not use commercially or alter it.
+
+---
+
+# Contact
+
+For licensing questions or special permissions, contact:  
+**carlodandan.personal@gmail.com**
