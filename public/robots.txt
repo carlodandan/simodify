@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /src/
+
+Sitemap: https://simodify.pages.dev/sitemap.xml

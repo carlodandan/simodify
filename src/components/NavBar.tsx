@@ -1,5 +1,6 @@
 import React from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { Link, useLocation } from 'react-router-dom'
+import { motion } from 'framer-motion'
 import IconButton from './IconButton'
 import ThemeToggle from './ThemeToggle'
 import type { Theme } from '../App'
@@ -17,20 +18,20 @@ const NavBar: React.FC<NavBarProps> = ({
   theme, 
   toggleTheme 
 }) => {
+  const location = useLocation()
+  
   const navItems = [
-    { id: 'home', icon: 'Home', label: 'Home' },
-    { id: 'projects', icon: 'Projects', label: 'Projects' },
-    { id: 'about', icon: 'About', label: 'About' },
-    { id: 'contact', icon: 'Mail', label: 'Contact' },
+    { id: 'home', icon: 'Home', label: 'Home', path: '/' },
+    { id: 'projects', icon: 'Projects', label: 'Projects', path: '/projects' },
+    { id: 'about', icon: 'About', label: 'About', path: '/about' },
+    { id: 'contact', icon: 'Mail', label: 'Contact', path: '/contact' },
   ]
 
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId)
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
-      setActiveSection(sectionId)
-    }
-  }
+  // Update active section based on current route
+  React.useEffect(() => {
+    const currentPath = location.pathname.substring(1) || 'home'
+    setActiveSection(currentPath)
+  }, [location.pathname, setActiveSection])
 
   return (
     <motion.nav
@@ -46,13 +47,18 @@ const NavBar: React.FC<NavBarProps> = ({
     >
       <div className="relative flex items-center gap-2 p-2 bg-custom-white/80 dark:bg-custom-dark/80 backdrop-blur-md rounded-2xl shadow-lg border border-white/20 dark:border-gray-700/20">
         {navItems.map((item) => (
-          <IconButton
+          <Link
             key={item.id}
-            icon={item.icon}
-            label={item.label}
-            isActive={activeSection === item.id}
-            onClick={() => scrollToSection(item.id)}
-          />
+            to={item.path}
+            onClick={() => setActiveSection(item.id)}
+          >
+            <IconButton
+              icon={item.icon}
+              label={item.label}
+              isActive={activeSection === item.id}
+              onClick={() => {}} // Empty function since navigation is handled by Link
+            />
+          </Link>
         ))}
         <div className="h-6 w-px bg-gray-300 dark:bg-gray-600 mx-1" />
         <ThemeToggle theme={theme} toggleTheme={toggleTheme} />

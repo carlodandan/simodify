@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
 import Layout from './components/Layout'
 import Home from './components/Home'
 import Projects from './components/Projects'
@@ -6,6 +7,19 @@ import About from './components/About'
 import Contact from './components/Contact'
 
 export type Theme = 'light' | 'dark'
+
+// Component to handle section activation based on route
+function RouteHandler({ setActiveSection }: { setActiveSection: (section: string) => void }) {
+  const location = useLocation()
+  
+  useEffect(() => {
+    // Extract section from pathname and remove leading slash
+    const section = location.pathname.substring(1) || 'home'
+    setActiveSection(section)
+  }, [location, setActiveSection])
+  
+  return null
+}
 
 function App() {
   const [theme, setTheme] = useState<Theme>('dark')
@@ -32,27 +46,32 @@ function App() {
     void root.offsetHeight
     
     localStorage.setItem('theme', theme)
-    
-    console.log('Theme applied to DOM:', theme) // Debug log
   }, [theme])
 
   const toggleTheme = () => {
-    console.log('Toggling theme from:', theme)
     setTheme(prev => prev === 'light' ? 'dark' : 'light')
   }
 
   return (
-    <Layout 
-      activeSection={activeSection} 
-      setActiveSection={setActiveSection}
-      theme={theme}
-      toggleTheme={toggleTheme}
-    >
-      <Home id="home" />
-      <Projects id="projects" />
-      <About id="about" />
-      <Contact id="contact" />
-    </Layout>
+    <Router>
+      <RouteHandler setActiveSection={setActiveSection} />
+      <Layout 
+        activeSection={activeSection} 
+        setActiveSection={setActiveSection}
+        theme={theme}
+        toggleTheme={toggleTheme}
+      >
+        <Routes>
+          <Route path="/" element={<Home id="home" />} />
+          <Route path="/home" element={<Home id="home" />} />
+          <Route path="/projects" element={<Projects id="projects" />} />
+          <Route path="/about" element={<About id="about" />} />
+          <Route path="/contact" element={<Contact id="contact" />} />
+          {/* Optional: Add a catch-all route for 404 */}
+          <Route path="*" element={<Home id="home" />} />
+        </Routes>
+      </Layout>
+    </Router>
   )
 }
 

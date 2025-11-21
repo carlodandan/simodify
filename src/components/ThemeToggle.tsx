@@ -10,7 +10,6 @@ interface ThemeToggleProps {
 
 const ThemeToggle: React.FC<ThemeToggleProps> = ({ theme, toggleTheme }) => {
   const handleClick = () => {
-    console.log('ThemeToggle clicked, current theme:', theme)
     toggleTheme()
   }
 
