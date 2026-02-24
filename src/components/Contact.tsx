@@ -54,6 +54,9 @@ const Contact: React.FC<ContactProps> = ({ id }) => {
           transition={{ duration: 0.8, delay: 0.4 }}
           viewport={{ once: true }}
         >
+          <p className="text-xl text-gray-600 dark:text-gray-300 font-light leading-relaxed">
+            Follow me on my main accounts.
+          </p>
           <div className="flex justify-center gap-4">
             <IconButton
               icon="Github"
@@ -64,25 +67,68 @@ const Contact: React.FC<ContactProps> = ({ id }) => {
             <IconButton
               icon="Facebook"
               label="Facebook"
-              onClick={() => window.open('https://web.facebook.com/carlodandan', '_blank')}
+              onClick={() => window.open('https://web.facebook.com/carlodandan.official', '_blank')}
               size="lg"
             />
             <IconButton
               icon="FaXTwitter"
               label="FaXTwitter"
-              onClick={() => window.open('https://twitter.com/carlodandan', '_blank')}
+              onClick={() => window.open('https://x.com/_carlodandan', '_blank')}
               size="lg"
             />
             <IconButton
               icon="Tiktok"
               label="Tiktok"
-              onClick={() => window.open('https://tiktok.com/carlodandan', '_blank')}
+              onClick={() => window.open('https://tiktok.com/@_carlodandan', '_blank')}
               size="lg"
             />
             <IconButton
               icon="Instagram"
               label="Instagram"
-              onClick={() => window.open('https://instagram.com/carlodandan', '_blank')}
+              onClick={() => window.open('https://instagram.com/_carlodandan', '_blank')}
+              size="lg"
+            />
+          </div>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          viewport={{ once: true }}
+        >
+          <p className="text-xl text-gray-600 dark:text-gray-300 font-light leading-relaxed mt-8">
+            Follow me on my art accounts.
+          </p>
+          <div className="flex justify-center gap-4">
+            <IconButton
+              icon="Github"
+              label="GitHub"
+              onClick={() => window.open('https://github.com/cd-Crypton', '_blank')}
+              size="lg"
+            />
+            <IconButton
+              icon="Facebook"
+              label="Facebook"
+              onClick={() => window.open('https://web.facebook.com/carlodee.official', '_blank')}
+              size="lg"
+            />
+            <IconButton
+              icon="FaXTwitter"
+              label="FaXTwitter"
+              onClick={() => window.open('https://x.com/deeofficial_iii', '_blank')}
+              size="lg"
+            />
+            <IconButton
+              icon="Tiktok"
+              label="Tiktok"
+              onClick={() => window.open('https://tiktok.com/@_artgalleryofcarlodee', '_blank')}
+              size="lg"
+            />
+            <IconButton
+              icon="Instagram"
+              label="Instagram"
+              onClick={() => window.open('https://instagram.com/_carlodeeart', '_blank')}
               size="lg"
             />
           </div>
