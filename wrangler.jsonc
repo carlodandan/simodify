@@ -1,6 +1,6 @@
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "simodify",
+	"name": "carlodandan",
 	"compatibility_date": "2025-10-11",
 	"pages_build_output_dir": "./dist"
 }

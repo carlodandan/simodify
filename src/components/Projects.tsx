@@ -27,9 +27,9 @@ const Projects: React.FC<ProjectsProps> = ({ id }) => {
     },
     {
       id: 4,
-      title: "Analytics Dashboard",
-      description: "Real-time data visualization and business intelligence",
-      category: "Web App"
+      title: "Digital Illustration",
+      description: "Digital Illustration - Anime Character, Chibis and more.",
+      category: "Digital Art"
     }
   ]
 

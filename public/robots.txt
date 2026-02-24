@@ -4,4 +4,4 @@ Disallow: /api/
 Disallow: /admin/
 Disallow: /src/
 
-Sitemap: https://simodify.pages.dev/sitemap.xml
+Sitemap: https://carlodandan.pages.dev/sitemap.xml

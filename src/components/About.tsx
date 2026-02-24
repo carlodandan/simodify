@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import profileImage from '../assets/carloDandan.jpg'
 
 interface AboutProps {
   id: string
@@ -41,7 +42,7 @@ const About: React.FC<AboutProps> = ({ id }) => {
             <div className="bg-gradient-to-br from-gray-200 to-gray-300 dark:from-gray-700 dark:to-gray-800 rounded-2xl aspect-square max-w-sm mx-auto overflow-hidden">
               {/* Placeholder for profile image */}
               <div className="w-full h-full flex items-center justify-center text-gray-500 dark:text-gray-400">
-                <span className="text-sm">Profile Image</span>
+                <img src={profileImage} alt="Profile" className="w-full h-full object-cover" />
               </div>
             </div>
           </motion.div>
@@ -58,9 +59,9 @@ const About: React.FC<AboutProps> = ({ id }) => {
                   Passionate about creating digital experiences that matter
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                  With years of experience in modern web technologies, I specialize in 
-                  building scalable, performant applications that provide exceptional 
-                  user experiences. I believe in clean code, thoughtful design, and 
+                  With years of experience in modern web technologies, I specialize in
+                  building scalable, performant applications that provide exceptional
+                  user experiences. I believe in clean code, thoughtful design, and
                   continuous learning.
                 </p>
               </div>

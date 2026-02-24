@@ -15,9 +15,9 @@ const Home: React.FC<HomeProps> = ({ id }) => {
           transition={{ duration: 0.8 }}
           className="text-5xl md:text-7xl font-light mb-6 text-gray-900 dark:text-white"
         >
-          Simodify
+          Carlo Dandan
         </motion.h1>
-        
+
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

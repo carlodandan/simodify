@@ -84,8 +84,5 @@ nyc_output/
 *.bak
 *.orig
 
-# Lock files (optional for team consistency)
-# Uncomment one if your team uses multiple package managers
-package-lock.json
-yarn.lock
-pnpm-lock.yaml
+# Agents
+.agent/

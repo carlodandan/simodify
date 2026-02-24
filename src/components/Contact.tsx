@@ -8,7 +8,7 @@ interface ContactProps {
 
 const Contact: React.FC<ContactProps> = ({ id }) => {
   const handleEmailClick = () => {
-    window.location.href = 'mailto:hello@simodify.com'
+    window.location.href = 'mailto:hello@carlodandan.com'
   }
 
   return (
@@ -26,7 +26,7 @@ const Contact: React.FC<ContactProps> = ({ id }) => {
           </h2>
           <div className="w-24 h-px bg-gray-300 dark:bg-gray-600 mx-auto mb-8" />
           <p className="text-xl text-gray-600 dark:text-gray-300 font-light leading-relaxed mb-8">
-            Let's create something amazing together. 
+            Let's create something amazing together.
             I'm always open to discussing new opportunities and ideas.
           </p>
         </motion.div>
@@ -58,31 +58,31 @@ const Contact: React.FC<ContactProps> = ({ id }) => {
             <IconButton
               icon="Github"
               label="GitHub"
-              onClick={() => window.open('https://github.com/simodify', '_blank')}
+              onClick={() => window.open('https://github.com/carlodandan', '_blank')}
               size="lg"
             />
             <IconButton
               icon="Facebook"
               label="Facebook"
-              onClick={() => window.open('https://web.facebook.com/simodify', '_blank')}
+              onClick={() => window.open('https://web.facebook.com/carlodandan', '_blank')}
               size="lg"
             />
             <IconButton
               icon="FaXTwitter"
               label="FaXTwitter"
-              onClick={() => window.open('https://twitter.com/simodify', '_blank')}
+              onClick={() => window.open('https://twitter.com/carlodandan', '_blank')}
               size="lg"
             />
             <IconButton
               icon="Tiktok"
               label="Tiktok"
-              onClick={() => window.open('https://tiktok.com/simodify', '_blank')}
+              onClick={() => window.open('https://tiktok.com/carlodandan', '_blank')}
               size="lg"
             />
             <IconButton
               icon="Instagram"
               label="Instagram"
-              onClick={() => window.open('https://instagram.com/simodify', '_blank')}
+              onClick={() => window.open('https://instagram.com/carlodandan', '_blank')}
               size="lg"
             />
           </div>
