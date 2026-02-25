@@ -9,20 +9,20 @@ interface ContactProps {
 const Contact: React.FC<ContactProps> = ({ id }) => {
 
   return (
-    <section id={id} className="min-h-screen py-20 flex items-center justify-center">
+    <section id={id} className="min-h-screen pb-20 flex items-center justify-center">
       <div className="max-w-2xl mx-auto text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="mb-12"
+          className="mb-8"
         >
           <h2 className="text-3xl md:text-4xl font-light mb-4 text-gray-900 dark:text-white">
             Get In Touch
           </h2>
           <div className="w-24 h-px bg-gray-300 dark:bg-gray-600 mx-auto mb-8" />
-          <p className="text-xl text-gray-600 dark:text-gray-300 font-light leading-relaxed mb-8">
+          <p className="text-xl text-gray-600 dark:text-gray-300 font-light leading-relaxed mb-4">
             Let's create something amazing together.
             I'm always open to discussing new opportunities and ideas.
           </p>
@@ -33,7 +33,7 @@ const Contact: React.FC<ContactProps> = ({ id }) => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
-          className="mb-12"
+          className="mb-8"
         >
           <motion.button
             whileHover={{ y: -3, scale: 1.02 }}
