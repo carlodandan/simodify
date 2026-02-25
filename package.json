@@ -7,8 +7,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview && npm run build && wrangler pages dev",
-    "deploy": "npm run build && wrangler pages deploy",
+    "preview": "vite preview && pnpm run build && wrangler pages dev",
+    "deploy": "pnpm run build && wrangler pages deploy",
     "cf-typegen": "wrangler types"
   },
   "dependencies": {
