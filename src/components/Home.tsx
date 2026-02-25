@@ -24,11 +24,22 @@ const Home: React.FC<HomeProps> = ({ id }) => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="mb-8"
         >
+          <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 font-light leading-relaxed text-balance">
+            "Carlo Dee"
+          </p>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="mb-8"
+        >
           <div className="w-24 h-px bg-gray-300 dark:bg-gray-600 mx-auto mb-6" />
           <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 font-light leading-relaxed text-balance">
             Crafting digital experiences
             <br />
-            with precision and elegance
+            with precision, elegance and storytelling
           </p>
         </motion.div>
 

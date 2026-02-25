@@ -4,7 +4,7 @@
       <img alt="Carlo Dandan" src="https://raw.githubusercontent.com/carlodandan/carlodandan/refs/heads/main/public/icons/ms-icon-310x310.png" width="220"/>
     </a>
   </div>
-    <h3 align="center">Carlo Dandan | An Artist that Tells a Story</h3>
+    <h3 align="center">Carlo Dandan | An Artist and Web Designer that Tells a Story</h3>
     <p align="center">
 </p>
 </p>
