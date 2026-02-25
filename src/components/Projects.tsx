@@ -7,23 +7,12 @@ interface ProjectsProps {
 
 const portfolioData = [
   {
-    id: "web",
-    categoryName: "Web App",
-    categoryDescription: "Modern web applications and platforms with seamless user experiences.",
-    projects: [
-      { id: "w1", title: "MRPH", description: "A responsive web application built for seamless interactions.", link: "https://mrph.pages.dev/" },
-      { id: "w2", title: "Aniyume", description: "An interactive web platform designed with modern UI principles.", link: "https://aniyume.qzz.io/" },
-      { id: "w3", title: "Artkat", description: "A creative web showcase featuring elegant layouts.", link: "https://artkat.pages.dev/" },
-      { id: "w4", title: "TodoIt", description: "A clean and functional task management web application.", link: "https://todoit.pages.dev/" }
-    ]
-  },
-  {
     id: "desktop",
     categoryName: "Desktop App",
     categoryDescription: "Robust cross-platform desktop applications built for productivity.",
     projects: [
       { id: "dkt1", title: "Admin Pro", description: "A comprehensive administrative desktop solution.", link: "https://github.com/carlodandan/admin-pro" },
-      { id: "dkt2", title: "Cendrive", description: "A secure and efficient desktop application.", link: "https://github.com/carlodandan/cendrive" }
+      { id: "dkt2", title: "Cendrive", description: "A secure and efficient desktop application for census-style database.", link: "https://github.com/carlodandan/cendrive" }
     ]
   },
   {
@@ -31,17 +20,21 @@ const portfolioData = [
     categoryName: "App",
     categoryDescription: "Mobile-first experiences designed for on-the-go usability.",
     projects: [
-      { id: "a1", title: "TodoIt Mobile", description: "The mobile-optimized version of the TodoIt task manager.", link: "https://todoit.pages.dev/" }
+      { id: "a1", title: "TODOIt", description: "The mobile-optimized version of the TODOIt task manager.", link: "https://todoit.pages.dev/" }
     ]
   },
   {
     id: "design",
     categoryName: "Design (Funnels & Web)",
-    categoryDescription: "High-converting sales funnels and beautiful website designs.",
+    categoryDescription: "High-converting sales funnels, modern web applications, and beautiful website designs.",
     projects: [
       { id: "dsgn1", title: "The Golden Fur - Main", description: "Primary landing page and sales funnel design.", link: "https://thegoldenfur-swm.systeme.io/" },
       { id: "dsgn2", title: "The Golden Fur - Booking", description: "Appointment scheduling interface design.", link: "https://thegoldenfur-swm.systeme.io/appointment-swm" },
-      { id: "dsgn3", title: "The Golden Fur - Success", description: "Thank you and confirmation page design.", link: "https://thegoldenfur-swm.systeme.io/thank-you" }
+      { id: "dsgn3", title: "The Golden Fur - Success", description: "Thank you and confirmation page design.", link: "https://thegoldenfur-swm.systeme.io/thank-you" },
+      { id: "w1", title: "MRPH", description: "A responsive web application built for Civil Service Examination.", link: "https://mrph.pages.dev/" },
+      { id: "w2", title: "Aniyume", description: "An interactive web platform streaming latest anime release.", link: "https://aniyume.qzz.io/" },
+      { id: "w3", title: "Artkat", description: "A creative web showcase for this specific digital artists.", link: "https://artkat.pages.dev/" },
+      { id: "w4", title: "TODOIt", description: "A clean and functional task management web application.", link: "https://todoit.pages.dev/" }
     ]
   },
   {
