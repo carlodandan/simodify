@@ -8,12 +8,11 @@ interface AboutProps {
 
 const About: React.FC<AboutProps> = ({ id }) => {
   const skills = [
-    "React & TypeScript",
+    "React",
     "Node.js",
     "UI/UX Design",
-    "Cloud Architecture",
     "Performance Optimization",
-    "Agile Development"
+    "Digital Illustrations"
   ]
 
   return (

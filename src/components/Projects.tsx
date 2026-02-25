@@ -42,7 +42,7 @@ const portfolioData = [
     categoryName: "Art",
     categoryDescription: "Digital Illustration, Character Design, and Concept Art.",
     projects: [
-      { id: "art1", title: "Instagram Gallery", description: "A curated collection of my digital artwork and illustrations.", link: "https://www.instagram.com/_carlodeeart/" },
+      { id: "art1", title: "Art Gallery", description: "A curated collection of my digital artwork and illustrations.", link: "https://carlodee.carrd.co/" },
       { id: "art2", title: "TikTok Process Videos", description: "Speedpaints, tutorials, and behind-the-scenes art processes.", link: "https://www.tiktok.com/@_artgalleryofcarlodee" }
     ]
   }
