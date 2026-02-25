@@ -7,9 +7,6 @@ interface ContactProps {
 }
 
 const Contact: React.FC<ContactProps> = ({ id }) => {
-  const handleEmailClick = () => {
-    window.location.href = 'mailto:hello@carlodandan.com'
-  }
 
   return (
     <section id={id} className="min-h-screen py-20 flex items-center justify-center">
@@ -41,10 +38,9 @@ const Contact: React.FC<ContactProps> = ({ id }) => {
           <motion.button
             whileHover={{ y: -3, scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
-            onClick={handleEmailClick}
             className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-2xl font-light text-lg shadow-lg hover:shadow-xl transition-all duration-300"
           >
-            Say Hello 👋
+            Say Hello in one of my accounts!👋
           </motion.button>
         </motion.div>
 
