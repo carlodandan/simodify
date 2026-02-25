@@ -32,6 +32,9 @@ importers:
       vite-plugin-pwa:
         specifier: ^1.1.0
         version: 1.2.0(vite@7.3.1(@types/node@24.10.13)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0))(workbox-build@7.4.0(@types/babel__core@7.20.5))(workbox-window@7.4.0)
+      vite-plugin-sitemap:
+        specifier: ^0.8.2
+        version: 0.8.2
       wrangler:
         specifier: ^4.50.0
         version: 4.68.1
@@ -2723,6 +2726,9 @@ packages:
     peerDependenciesMeta:
       '@vite-pwa/assets-generator':
         optional: true
+
+  vite-plugin-sitemap@0.8.2:
+    resolution: {integrity: sha512-bqIw6NVOXg6je81lzX8Lm0vjf8/QSAp8di8fYQzZ3ZdVicOm8+6idBGALJiy1R1FiXNIK8rgORO6HBqXyHW+iQ==}
 
   vite@7.3.1:
     resolution: {integrity: sha512-w+N7Hifpc3gRjZ63vYBXA56dvvRlNWRczTdmCBBa+CotUzAPf5b7YMdMR/8CQoeYE5LX3W4wj6RYTgonm1b9DA==}
@@ -5643,6 +5649,8 @@ snapshots:
       workbox-window: 7.4.0
     transitivePeerDependencies:
       - supports-color
+
+  vite-plugin-sitemap@0.8.2: {}
 
   vite@7.3.1(@types/node@24.10.13)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0):
     dependencies:
